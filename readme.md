@@ -1,4 +1,5 @@
 # cyber-security-llm-agents
+
 A collection of agents that use Large Language Models (LLMs) to perform tasks common on our day to day jobs in cyber security.
 Built on top of [AutoGen](https://microsoft.github.io/autogen/).
 
@@ -22,7 +23,7 @@ Released as part of our talks at RSAC2024:
 > [!CAUTION]
 > Running LLM-generated source code and commands poses a security risk to your host environment! Be careful and only run this in a virtual or test environment.
 
-### Step 1 - Install  requirements
+### Step 1 - Install requirements
 
 ```
 pip install -r requirements
@@ -33,8 +34,8 @@ pip install -r requirements
 ```
 cp .env_template .env
 ```
-Then add your LLM API information and other parameters to the ``.env``.
 
+Then add your LLM API information and other parameters to the `.env`.
 
 ### Step 3 - Start HTTP and FTP server (Optional)
 
@@ -44,7 +45,6 @@ This is useful for demos, where you might want to showcase exfiltration or downl
 ```
 python run_servers.py
 ```
-
 
 ### Step 3 - Hello, Agents
 
@@ -71,22 +71,20 @@ Tell me a cyber security joke
 --------------------------------------------------------------------------------
 text_analyst_agent (to task_coordinator_agent):
 
-Why was the computer cold? It left its Windows open. 
+Why was the computer cold? It left its Windows open.
 
 TERMINATE
 ```
 
 ## Building Scenarios
 
-All scenarios are defined in ``actions/agent_actions.py``. You can use that file to modify and create new scenarios. Once a new scenario has been added to the dictionary, you can run it:
+All scenarios are defined in `actions/agent_actions.py`. You can use that file to modify and create new scenarios. Once a new scenario has been added to the dictionary, you can run it:
 
 ```
 python run_agents.py <scenario-name>
 ```
 
-
 ## Development
-
 
 ### Jupyter notebooks
 
@@ -107,7 +105,7 @@ flake8 --exclude=.venv --ignore=E501,W503 .
 
 ## Conributions
 
-We welcome contributions from the community! 
+We welcome contributions from the community!
 
 If you have ideas for new agents, tasks, or improvements, please feel free to fork our repository, make your changes, and submit a pull request.
 
@@ -117,11 +115,6 @@ Released under the GNU GENERAL PUBLIC LICENSE v3 (GPL-3).
 
 ## Disclaimer
 
-Please note that the software contained in this repository is in its early stages of development. As such, it is considered to be an early release and may contain components that are not fully stable, potentially leading to breaking changes. Users should exercise caution when using this software. 
+Please note that the software contained in this repository is in its early stages of development. As such, it is considered to be an early release and may contain components that are not fully stable, potentially leading to breaking changes. Users should exercise caution when using this software.
 
 We are committed to improving and extending the software's capabilities over the coming months, and we welcome any feedback that can help us enhance its performance and functionality.
-
-## Acknowledgements
-We are grateful for the support received by 
-[INNOVIRIS](https://innoviris.brussels/) and the Brussels region in 
-funding our Research & Development activities. 
