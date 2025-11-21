@@ -39,15 +39,15 @@ def download_web_page(
     ]
 ) -> Annotated[str, "The content of the web page"]:
 
-    # raw_output = subprocess.check_output(
-    #     f"curl -sS {url}",
-    #     shell=True,
-    #     stderr=subprocess.STDOUT,
-    #     text=True,
-    # )
+    raw_output = subprocess.check_output(
+        f"curl -sS {url}",
+        shell=True,
+        stderr=subprocess.STDOUT,
+        text=True,
+    )
 
-    # soup = BeautifulSoup(raw_output, "html.parser")
-    # return soup.get_text(strip=True)
+    soup = BeautifulSoup(raw_output, "html.parser")
+    return soup.get_text(strip=True)
 
 
 def detect_telemetry_gaps(
