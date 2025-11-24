@@ -14,8 +14,8 @@ cmd_exec_agent = ConversableAgent(
     is_termination_msg=lambda msg: (
         "terminate" in (msg.get("content") or "").lower() if msg else False
     ),
-    description="""A helpful assistant that can execute commands to solve problems""",
-    system_message="""Append "TERMINATE" to your response when you successfully completed the objective.""",
+    # description="""A helpful assistant that can execute commands to solve problems""",
+    # system_message="""Append "TERMINATE" to your response when you successfully completed the objective.""",
 )
 
 
