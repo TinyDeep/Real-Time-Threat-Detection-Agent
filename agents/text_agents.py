@@ -44,10 +44,10 @@ def register_tools():
 
     # Detect telemetry NOT detected by an EDR
 
-    # internet_agent.register_for_llm(
-    #     name="detect_telemetry_gaps",
-    #     description="Detect telemetry NOT detected by an EDR.",
-    # )(detect_telemetry_gaps)
+    internet_agent.register_for_llm(
+        name="detect_telemetry_gaps",
+        description="Detect telemetry NOT detected by an EDR.",
+    )(detect_telemetry_gaps)
 
     task_coordinator_agent.register_for_execution(name="detect_telemetry_gaps")(
         detect_telemetry_gaps
