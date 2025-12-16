@@ -7,8 +7,8 @@ from tools.code_tools import exec_shell_command
 
 cmd_exec_agent = ConversableAgent(
     name="cmd_exec_agent",
-    llm_config=llm_config,
-    human_input_mode="NEVER",
+    # llm_config=llm_config,
+    # human_input_mode="NEVER",
     code_execution_config=False,
     max_consecutive_auto_reply=5,
     is_termination_msg=lambda msg: (
