@@ -67,14 +67,14 @@ def register_tools():
 
     # Perform an API request to Caldera
 
-    # caldera_agent.register_for_llm(
-    #     name="caldera_api_request",
-    #     description="Perform an API request to Caldera based on the given API method extracted from the Swagger documentation.",
-    # )(caldera_api_request)
+    caldera_agent.register_for_llm(
+        name="caldera_api_request",
+        description="Perform an API request to Caldera based on the given API method extracted from the Swagger documentation.",
+    )(caldera_api_request)
 
-    # task_coordinator_agent.register_for_execution(name="caldera_api_request")(
-    #     caldera_api_request
-    # )
+    task_coordinator_agent.register_for_execution(name="caldera_api_request")(
+        caldera_api_request
+    )
 
     # Create an Adversary profile in Caldera
 
